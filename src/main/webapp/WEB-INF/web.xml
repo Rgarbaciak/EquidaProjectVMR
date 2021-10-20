@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <listener>
+        <listener-class>Database.InitConnexion</listener-class>
+    </listener>
+    <servlet>
+        <servlet-name>ServletClient</servlet-name>
+        <servlet-class>servlet.ServletClient</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletLogin</servlet-name>
+        <servlet-class>servlet.ServletLogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletCourse</servlet-name>
+        <servlet-class>servlet.ServletCourse</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletVente</servlet-name>
+        <servlet-class>servlet.ServletVente</servlet-class>
+    </servlet>
+    
+        <servlet>
+        <servlet-name>ServletLogout</servlet-name>
+        <servlet-class>servlet.ServletLogout</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletCheval</servlet-name>
+        <servlet-class>servlet.ServletCheval</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletConnexion</servlet-name>
+        <servlet-class>servlet.ServletConnexion</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletParam</servlet-name>
+        <servlet-class>servlet.ServletParam</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletClient</servlet-name>
+        <url-pattern>/ServletClient/listerLesClientsParCategVente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletClient</servlet-name>
+        <url-pattern>/ServletClient/listerLesClients</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletVente</servlet-name>
+        <url-pattern>/ServletVente/listerLesVentes</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletVente</servlet-name>
+        <url-pattern>/ServletVente/listerLesCourrielsParVentes</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletVente</servlet-name>
+        <url-pattern>/ServletVente/listerLesChevauxParVente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletClient</servlet-name>
+        <url-pattern>/ServletClient/ajouterClient</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ServletCheval</servlet-name>
+        <url-pattern>/ServletCheval/listerLesChevaux</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletCheval</servlet-name>
+        <url-pattern>/ServletCheval/AjouterCheval</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletCheval</servlet-name>
+        <url-pattern>/ServletCheval/listerLesRaces</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletParam</servlet-name>
+        <url-pattern>/ServletParam/listerLesPays</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletParam</servlet-name>
+        <url-pattern>/ServletParam/listerLesLieux</url-pattern>
+    </servlet-mapping>
+    
+        <servlet-mapping>
+        <servlet-name>ServletParam</servlet-name>
+        <url-pattern>/ServletParam/ajouterRace</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet-mapping>
+        <servlet-name>ServletConnexion</servlet-name>
+        <url-pattern/>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletCheval</servlet-name>
+        <url-pattern>/ServletCheval/consulter</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletCourse</servlet-name>
+        <url-pattern>/ServletCourse/listerLesCourses</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletClient</servlet-name>
+        <url-pattern>/ServletClient/updateClient</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletLogin</servlet-name>
+        <url-pattern>/ServletLogin/Login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletLogin</servlet-name>
+        <url-pattern>/ServletLogin/Profil</url-pattern>
+    </servlet-mapping>
+    
+      <servlet-mapping>
+        <servlet-name>ServletLogout</servlet-name>
+        <url-pattern>/ServletLogout</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>ServletLogout</servlet-name>
+        <url-pattern>/ServletLogout/Deconnecter</url-pattern>
+    </servlet-mapping>
+    
+        <servlet-mapping>
+        <servlet-name>ServletClient</servlet-name>
+        <url-pattern>/ServletClient/ajouterCompte</url-pattern>
+        
+    </servlet-mapping>
+      <servlet-mapping>
+        <servlet-name>ServletCheval</servlet-name>
+        <url-pattern>/ServletCheval/updateCheval</url-pattern>
+    </servlet-mapping>
+</web-app>
